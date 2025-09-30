@@ -327,7 +327,7 @@
         // Replace with your actual image URL
         const profileImage = document.getElementById('profileImg');
         // You'll need to upload your image and replace this URL
-        profileImage.src = 'your-image-url-here.jpg';
+        profileImage.src = 'Images/Headshot.jpeg';
         
         // If image fails to load, hide it
         profileImage.onerror = function() {
