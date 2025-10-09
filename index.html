@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nicholas A. Thomas - Founder of Complexity Insights, using chaos and complexity economics to analyze markets and predict trends through big data and machine learning.">
     <title>Nicholas A. Thomas</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✳%3C/text%3E%3C/svg%3E">
     <style>
         * {
             margin: 0;
@@ -48,6 +50,7 @@
 
         .hero-image {
             flex: 0 0 auto;
+            position: relative;
         }
 
         .hero-image img {
@@ -57,6 +60,21 @@
             object-fit: cover;
             border: 3px solid #2d4a3e;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            background-color: #a3b3ac;
+        }
+
+        .hero-image .placeholder {
+            width: 400px;
+            height: 400px;
+            border-radius: 8px;
+            border: 3px solid #2d4a3e;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #bcc9c2 0%, #a8b5ae 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #2d4a3e;
         }
 
         .hero-content {
@@ -80,6 +98,23 @@
         .hero-content p:last-child {
             font-style: italic;
             color: #4a4a4a;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 2rem;
+            background-color: #2d4a3e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #3d6b5c;
+            transform: translateY(-2px);
         }
 
         .content-section {
@@ -136,6 +171,18 @@
             font-size: 1rem;
             color: #2c2c2c;
             line-height: 1.8;
+        }
+
+        .card a {
+            color: #2d4a3e;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .card a:hover {
+            color: #3d6b5c;
+            text-decoration: underline;
         }
 
         .asterisk {
@@ -218,10 +265,12 @@
                 text-align: center;
             }
 
-            .hero-image img {
+            .hero-image img,
+            .hero-image .placeholder {
                 width: 100%;
                 max-width: 400px;
                 height: auto;
+                aspect-ratio: 1;
             }
 
             .header h1 {
@@ -236,6 +285,18 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero {
+                padding: 3rem 2rem;
+            }
+            
+            .hero-image img,
+            .hero-image .placeholder {
+                width: 300px;
+                height: 300px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -245,14 +306,15 @@
 
     <section class="hero">
         <div class="hero-image">
-            <img src="about:blank" alt="Nicholas A. Thomas" id="profileImg">
+            <img src="Images/Headshot.jpeg" alt="Nicholas A. Thomas" id="profileImg" style="display: none;">
+            <div class="placeholder" id="placeholder">✳</div>
         </div>
         <div class="hero-content">
             <h2>A passion for problem solving.</h2>
-            <p><strong>Founder of Complexity Insights.</strong></p>
-            <p>A firm using chaos and complexity economics to find order.</p>
-            <p>For millennia people have trying to predict the future. Now leveraging big data and machine learning, this is possible.</p>
-            <p>[Site still under construction.]</p>
+            <p><strong>Founder of <a href="https://complexityinsights.com" target="_blank" style="color: #1a1a1a; text-decoration: underline;">Complexity Insights</a>.</strong></p>
+            <p>A firm using chaos and complexity economics to analyze market patterns and forecast economic trends.</p>
+            <p>For millennia people have been trying to predict the future. Now, leveraging big data and machine learning, we can identify the patterns that drive change.</p>
+            <a href="https://substack.com/@econnickt" target="_blank" class="cta-button">Read My Research</a>
         </div>
     </section>
 
@@ -260,7 +322,7 @@
 
     <section class="content-section">
         <h2 class="section-title">Nicholas Thomas</h2>
-        <p class="section-subtitle">Over the past four years I have been building myself to have a deep understanding of the field.</p>
+        <p class="section-subtitle">Over the past four years, I've developed deep expertise in economics, complexity science, and data-driven analysis.</p>
 
         <div class="cards">
             <div class="card">
@@ -268,19 +330,21 @@
                 <h3>Education</h3>
                 <p>Economics B.S.<br>
                 Focus: Business and Law Economics<br>
-                Minor in Business Administration</p>
+                Minor in Business Administration<br><br>
+                Combining rigorous economic theory with practical business applications and legal frameworks.</p>
             </div>
 
             <div class="card">
                 <div class="asterisk" style="margin: 0 0 1rem 0; font-size: 1.5rem;">✳</div>
                 <h3>Experience</h3>
-                <p>I have in depth experience holding past internships with the CATO Institute and the Greater Washington Institute.</p>
+                <p>Research internships with the <strong>CATO Institute</strong> and the <strong>Greater Washington Institute</strong>, focusing on economic policy analysis, market research, and data-driven insights into complex economic systems.</p>
             </div>
 
             <div class="card">
                 <div class="asterisk" style="margin: 0 0 1rem 0; font-size: 1.5rem;">✳</div>
                 <h3>Academic Projects</h3>
-                <p>I regularly publish passion research projects on my Substack.</p>
+                <p>I regularly publish research exploring chaos theory, complexity economics, and market dynamics on my <a href="https://substack.com/@econnickt" target="_blank">Substack</a>.<br><br>
+                Topics include emergent market behaviors, predictive modeling, and economic forecasting.</p>
             </div>
         </div>
     </section>
@@ -288,7 +352,7 @@
     <section class="content-section">
         <div class="connect">
             <h2>Connect!</h2>
-            <p>Stay in the loop with everything you need to know.</p>
+            <p>Follow my research, connect professionally, or reach out for consulting inquiries.</p>
             <div class="social-links">
                 <a href="https://twitter.com/EconNickT" target="_blank" aria-label="Twitter">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +374,7 @@
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
                 </a>
-                <a href="https://substack.com/@econnickt?" target="_blank" aria-label="Substack">
+                <a href="https://substack.com/@econnickt" target="_blank" aria-label="Substack">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
                     </svg>
@@ -321,18 +385,27 @@
 
     <footer class="footer">
         <p>Nicholas A. Thomas</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem; font-style: normal; color: #5a5a5a;">© 2025 Nicholas A. Thomas. All rights reserved.</p>
     </footer>
 
     <script>
-        // Replace with your actual image URL
         const profileImage = document.getElementById('profileImg');
-        // You'll need to upload your image and replace this URL
-        profileImage.src = 'Images/Headshot.jpeg';
+        const placeholder = document.getElementById('placeholder');
         
-        // If image fails to load, hide it
+        // Try to load the image
+        profileImage.onload = function() {
+            this.style.display = 'block';
+            placeholder.style.display = 'none';
+        };
+        
+        // If image fails to load, keep showing placeholder
         profileImage.onerror = function() {
             this.style.display = 'none';
+            placeholder.style.display = 'flex';
         };
+        
+        // Attempt to load the image
+        profileImage.src = 'Images/Headshot.jpeg';
     </script>
 </body>
 </html>
