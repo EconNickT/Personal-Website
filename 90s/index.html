@@ -1,1 +1,407 @@
-////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas's Totally Rad Homepage!!! 🌟</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A8Pv/APD7/wDw+/8A8Pv/AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/AP///wAAAAAAAAAAAAAAAAAAAAAA////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////AAAAAAAAAAAAAP///wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wD///8A////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////AAAAAAAA////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////AAAAAAAAAAAAAAAAAAAA////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/AP///wAAAAAAAAAAAAAAAAAAAAAA////AP///wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A8Pv/APD7/wDw+/8A8Pv/AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD4HwAA4AcAAMADAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAwAMAAOAHAAD4HwAA//8AAA==">
+    <style>
+        @keyframes rainbow {
+            0% { color: #ff0000; }
+            16% { color: #ff8800; }
+            33% { color: #ffff00; }
+            50% { color: #00ff00; }
+            66% { color: #0088ff; }
+            83% { color: #8800ff; }
+            100% { color: #ff0000; }
+        }
+
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000080;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.03) 35px, rgba(255,255,255,.03) 70px);
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            color: #00ff00;
+            overflow-x: hidden;
+        }
+
+        .construction {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #ffff00 25%, #000000 25%, #000000 50%, #ffff00 50%, #ffff00 75%, #000000 75%, #000000);
+            background-size: 40px 40px;
+            border: 5px solid #ff0000;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .construction img {
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+        }
+
+        .construction h1 {
+            font-size: 2.5rem;
+            text-shadow: 3px 3px 0px #ff00ff, 6px 6px 0px #00ffff;
+            animation: rainbow 3s linear infinite;
+            margin: 10px 0;
+        }
+
+        .header {
+            background: linear-gradient(to bottom, #0000aa, #0000ff);
+            padding: 20px;
+            text-align: center;
+            border: 3px ridge #00ffff;
+            margin: 20px;
+            box-shadow: 0 0 20px #00ffff;
+        }
+
+        .header h2 {
+            font-size: 3rem;
+            animation: rainbow 2s linear infinite;
+            text-shadow: 2px 2px 0px #000000;
+            margin-bottom: 10px;
+        }
+
+        .marquee-container {
+            background-color: #ffff00;
+            color: #ff0000;
+            padding: 10px;
+            border: 3px solid #000000;
+            margin: 20px;
+            overflow: hidden;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+
+        .visitor-counter {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 15px;
+            border: 3px solid #ff0000;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 300px;
+            font-size: 1.2rem;
+            box-shadow: 5px 5px 0px #ff00ff;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #c0c0c0;
+            border: 5px outset #ffffff;
+            color: #000000;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border: 3px inset #808080;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .section h3 {
+            color: #0000ff;
+            font-size: 2rem;
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+
+        .gif-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .gif-box {
+            width: 88px;
+            height: 31px;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            border: 2px solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .link-button {
+            background: linear-gradient(to bottom, #ffffff, #c0c0c0);
+            border: 3px outset #ffffff;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-family: 'Comic Sans MS', cursive;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000000;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.2s;
+        }
+
+        .link-button:hover {
+            background: linear-gradient(to bottom, #ffff00, #ff8800);
+            transform: scale(1.1);
+        }
+
+        .link-button:active {
+            border-style: inset;
+        }
+
+        .webring {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #800080;
+            border: 5px double #ffff00;
+        }
+
+        .webring h4 {
+            color: #ffff00;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .webring a {
+            color: #00ffff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .webring a:hover {
+            text-decoration: underline;
+            color: #ff00ff;
+        }
+
+        .guestbook {
+            background-color: #ffff99;
+            border: 5px groove #ff0000;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .guestbook h3 {
+            color: #ff0000;
+            text-align: center;
+        }
+
+        .blink {
+            animation: blink 1s step-start infinite;
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #00ff00;
+            padding: 30px;
+            text-align: center;
+            margin: 20px;
+            border: 3px solid #00ff00;
+        }
+
+        .footer a {
+            color: #00ffff;
+        }
+
+        .best-viewed {
+            text-align: center;
+            color: #ffff00;
+            margin: 20px;
+            font-size: 0.9rem;
+        }
+
+        img.icon {
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 768px) {
+            .header h2 {
+                font-size: 2rem;
+            }
+            
+            .construction h1 {
+                font-size: 1.5rem;
+            }
+            
+            .gif-row {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="construction">
+        <h1>🚧 UNDER CONSTRUCTION 🚧</h1>
+        <p style="font-size: 1.5rem; color: #000000; font-weight: bold; margin: 10px 0;">
+            ⚠️ CAUTION ⚠️
+        </p>
+    </div>
+
+    <div class="header">
+        <h2>✨ WELCOME TO NICHOLAS'S CYBER SPACE ✨</h2>
+        <p style="font-size: 1.5rem; color: #ffff00;">🌐 THE COOLEST PAGE ON THE WORLD WIDE WEB 🌐</p>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee">
+            ⭐ WELCOME TO MY HOMEPAGE! ⭐ THANKS FOR VISITING! ⭐ SIGN MY GUESTBOOK! ⭐ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0! ⭐ 
+        </div>
+    </div>
+
+    <div class="visitor-counter">
+        🔢 YOU ARE VISITOR NUMBER: <br>
+        <span style="font-size: 2rem; color: #ff0000;">00</span>
+        <span style="font-size: 2rem; color: #ff0000;">04</span>
+        <span style="font-size: 2rem; color: #ff0000;">20</span>
+        <span style="font-size: 2rem; color: #ff0000;">69</span>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h3>📌 ABOUT ME 📌</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                <span class="blink">★NEW★</span> Hey there, dial up surfer! 😎 Welcome to my personal corner of cyberspace! 
+                I'm Nicholas, and I'm totally into <b>ECONOMICS</b>, <b>CHAOS THEORY</b>, and <b>COMPLEXITY SCIENCE</b>! 
+                🧮📊📈
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 10px;">
+                When I'm not crunching numbers and predicting the unpredictable, you can find me vibing to some sick beats 🎵, 
+                reading about the latest tech 💾, or just hanging out online! This page is dedicated to all things ME!
+            </p>
+            <p style="font-size: 1.1rem; margin-top: 15px;">
+                <b>STATUS:</b> <span style="color: #00ff00;">● ONLINE</span> | 
+                <b>MOOD:</b> 😄 Totally rad! | 
+                <b>LISTENING TO:</b> 🎧 Whatever's on MTV
+            </p>
+        </div>
+
+        <div class="gif-row">
+            <div class="gif-box">COOL SITE</div>
+            <div class="gif-box" style="animation-delay: 0.5s;">HOT!</div>
+            <div class="gif-box" style="animation-delay: 1s;">NEW!</div>
+            <div class="gif-box" style="animation-delay: 1.5s;">AWARD</div>
+        </div>
+
+        <div class="section">
+            <h3>🔥 MY INTERESTS 🔥</h3>
+            <ul style="font-size: 1.1rem; line-height: 2; margin-left: 30px;">
+                <li>💰 <b>Economics</b> - Making sense of the markets, baby!</li>
+                <li>🌀 <b>Chaos Theory</b> - Finding order in the chaos (so deep!)</li>
+                <li>📊 <b>Data Science</b> - Numbers are my jam!</li>
+                <li>💻 <b>Surfing the Information Superhighway</b></li>
+                <li>🎮 <b>Video Games</b> (when I have time lol)</li>
+                <li>📚 <b>Reading</b> - Knowledge is power!</li>
+                <li>🎵 <b>Music</b> - All genres, all day!</li>
+            </ul>
+        </div>
+
+        <div class="guestbook">
+            <h3>📝 ★★★ SIGN MY GUESTBOOK! ★★★ 📝</h3>
+            <p style="text-align: center; font-size: 1.1rem; margin: 15px 0;">
+                Please leave a message so I know you were here! <br>
+                <span class="blink">ALL MY FRIENDS ARE DOING IT!</span>
+            </p>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="mailto:contact@nicholas-thomas.com?subject=Guestbook%20Entry" class="link-button">
+                    📧 SIGN GUESTBOOK 📧
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>🌐 CHECK OUT MY LINKS! 🌐</h3>
+            <div style="text-align: center;">
+                <a href="https://nicholas-thomas.com" class="link-button">🏠 MY PROFESSIONAL SITE</a>
+                <a href="https://complexityinsights.com" class="link-button">💼 COMPLEXITY INSIGHTS</a>
+                <a href="https://substack.com/@econnickt" class="link-button">📰 MY SUBSTACK</a>
+                <a href="https://twitter.com/EconNickT" class="link-button">🐦 TWITTER</a>
+                <a href="https://www.linkedin.com/in/thomasnicholasa/" class="link-button">💼 LINKEDIN</a>
+                <a href="https://github.com/EconNickT" class="link-button">💻 GITHUB</a>
+            </div>
+        </div>
+
+        <div class="webring">
+            <h4>🔗 THIS SITE IS PART OF THE ECONOMICS WEBRING! 🔗</h4>
+            <p style="color: #ffffff; margin: 10px 0;">
+                <a href="#">⬅️ PREVIOUS</a> | 
+                <a href="#">🏠 HOME</a> | 
+                <a href="#">NEXT ➡️</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="best-viewed">
+        <p>
+            ⚡ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0+ AT 800x600 RESOLUTION ⚡
+        </p>
+        <p style="margin-top: 10px;">
+            📧 Got <b>E-MAIL</b>? 📧 | 🔊 <b>SOUND ENABLED!</b> 🔊
+        </p>
+    </div>
+
+    <div class="footer">
+        <p style="font-size: 1.3rem; margin-bottom: 10px;">
+            ⚡ POWERED BY: <span style="color: #ff00ff;">HTML</span> & <span style="color: #00ffff;">PURE INTERNET VIBES</span> ⚡
+        </p>
+        <p style="font-size: 1rem; margin: 10px 0;">
+            This page was hand-coded with ❤️ in the spirit of the early web
+        </p>
+        <p style="margin-top: 15px;">
+            <a href="mailto:contact@nicholas-thomas.com">📧 E-MAIL ME!</a>
+        </p>
+        <p style="font-size: 0.9rem; margin-top: 15px; color: #c0c0c0;">
+            © 2025 Nicholas A. Thomas | Last Updated: RIGHT NOW!
+        </p>
+        <p style="font-size: 1.2rem; margin-top: 10px;">
+            <span class="blink">★ YOU ARE AWESOME! ★</span>
+        </p>
+    </div>
+
+    <div style="text-align: center; margin: 20px;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="spacer" style="height: 20px; width: 1px;">
+    </div>
+</body>
+</html>
