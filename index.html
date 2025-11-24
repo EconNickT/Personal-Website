@@ -42,30 +42,32 @@
             font-weight: 700;
         }
 
-        /* --- HEADER --- */
+        /* --- HEADER (Refined Size) --- */
         .header {
             background-color: var(--bg-paper);
-            padding: 3rem 0 1.5rem;
+            padding: 1.5rem 0; /* Reduced from 3rem */
             text-align: center;
-            border-bottom: 3px double var(--border-color); /* Classic Double Border */
+            border-bottom: 3px double var(--border-color);
             margin: 0 2rem;
         }
 
         .header h1 {
-            font-size: 3.5rem;
+            font-size: 3rem; /* Slightly adjusted scale */
             color: var(--ivy-green);
             letter-spacing: -0.5px;
         }
 
-        /* --- HERO SECTION --- */
+        /* --- HERO SECTION (Green Background) --- */
         .hero {
+            background-color: var(--ivy-green); /* The "Elevated Green" */
+            color: var(--bg-paper); /* Light text for contrast */
             padding: 5rem 2rem;
             display: flex;
-            max-width: 1100px;
-            margin: 0 auto;
+            justify-content: center;
             align-items: center;
-            gap: 4rem;
+            gap: 5rem;
             flex-wrap: wrap;
+            margin-bottom: 3rem;
         }
 
         .hero-image {
@@ -73,51 +75,59 @@
             position: relative;
         }
 
-        /* The Frame Effect */
+        /* Headshot Refinements */
         .hero-image img {
-            width: 380px;
-            height: 380px;
+            width: 420px; /* Larger */
+            height: 420px;
             object-fit: cover;
-            /* Double border creates a 'framed photo' look */
-            border: 4px solid var(--white);
-            outline: 1px solid var(--border-color);
-            box-shadow: 0 10px 30px rgba(26, 51, 42, 0.15); 
+            border-radius: 40px; /* More rounded corners */
+            
+            /* Green border as requested. 
+               Added a thin white outline so the green border 
+               is visible against the green background. */
+            border: 6px solid var(--ivy-green); 
+            outline: 2px solid rgba(255,255,255,0.3);
+            
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
             display: block; 
         }
 
         .hero-image .placeholder {
-            width: 380px;
-            height: 380px;
+            width: 420px;
+            height: 420px;
             background-color: #e5e5e5;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 4rem;
             color: var(--ivy-green);
-            border: 1px solid var(--border-color);
+            border-radius: 40px;
         }
 
         .hero-content {
             flex: 1;
             min-width: 300px;
+            max-width: 600px;
         }
 
         .hero-content h2 {
+            font-family: 'Garamond', 'Georgia', serif; /* Standard font, not ugly italic */
+            font-weight: 400; /* Lighter weight for elegance */
             font-size: 2.8rem;
             margin-bottom: 1.5rem;
-            color: var(--ivy-green);
+            color: var(--white); /* White text on green */
             line-height: 1.1;
-            font-style: italic;
+            font-style: normal; /* Removed italics */
         }
 
         .hero-content p {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             margin-bottom: 1.2rem;
-            color: var(--text-ink);
+            color: rgba(255,255,255,0.9); /* Soft white */
         }
 
         .company-link {
-            color: var(--ivy-green);
+            color: var(--white);
             text-decoration: none;
             border-bottom: 1px solid var(--old-gold);
             font-weight: 700;
@@ -125,18 +135,19 @@
         }
 
         .company-link:hover {
-            background-color: rgba(166, 139, 91, 0.1);
+            color: var(--old-gold);
+            border-bottom-color: transparent;
         }
 
-        /* Classic Button Style */
+        /* Button tailored for Green Background */
         .cta-button {
             display: inline-block;
             margin-top: 2rem;
             padding: 0.8rem 2.5rem;
             background-color: transparent;
-            color: var(--ivy-green);
+            color: var(--old-gold); /* Gold text */
             text-decoration: none;
-            border: 1px solid var(--ivy-green);
+            border: 1px solid var(--old-gold); /* Gold border */
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.3rem;
             font-weight: 600;
@@ -145,8 +156,8 @@
         }
 
         .cta-button:hover {
-            background-color: var(--ivy-green);
-            color: var(--white);
+            background-color: var(--old-gold);
+            color: var(--ivy-green);
             transform: translateY(-1px);
         }
 
@@ -155,7 +166,7 @@
             text-align: center;
             font-size: 1.5rem;
             color: var(--old-gold);
-            margin: 3rem 0;
+            margin: 1.5rem 0 0.5rem; /* Reduced spacing */
             font-family: serif;
         }
 
@@ -188,11 +199,9 @@
             gap: 2.5rem;
         }
 
-        /* Stationary Card Style */
         .card {
             background-color: var(--white);
             padding: 2.5rem;
-            /* Thin, refined border instead of thick colored one */
             border: 1px solid var(--border-color);
             text-align: center;
             transition: all 0.3s ease;
@@ -270,7 +279,6 @@
             transform: translateY(-3px);
         }
 
-        /* SVG Color Fix for Hover */
         .social-links svg {
             width: 22px;
             height: 22px;
@@ -324,7 +332,7 @@
             }
 
             .hero-image img, .hero-image .placeholder {
-                width: 280px;
+                width: 280px; /* Adjusted for mobile */
                 height: 280px;
             }
 
@@ -347,7 +355,7 @@
             <h2>A passion for problem solving.</h2>
             <p><strong>Founder of <a href="https://complexityinsights.com" target="_blank" class="company-link">Complexity Insights</a>.</strong></p>
             <p>Combining rigorous economic theory with complexity science to analyze market patterns and forecast trends.</p>
-            <p style="font-style: italic; color: #666; margin-top: 1rem;">
+            <p style="font-style: italic; color: rgba(255,255,255,0.7); margin-top: 1rem;">
                 "For millennia people have been trying to predict the future. Now, leveraging big data and machine learning, we can identify the patterns that drive change."
             </p>
             <a href="https://substack.com/@econnickt" target="_blank" class="cta-button">Read My Research</a>
