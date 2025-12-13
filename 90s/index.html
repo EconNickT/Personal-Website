@@ -3,37 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicholas's Totally Rad Homepage!!! 🌟</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A8Pv/APD7/wDw+/8A8Pv/AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/AP///wAAAAAAAAAAAAAAAAAAAAAA////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////AAAAAAAAAAAAAP///wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wD///8A////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////AAAAAAAA////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////AAAAAAAAAAAAAAAAAAAA////APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A8Pv/AP///wAAAAAAAAAAAAAAAAAAAAAA////AP///wDw+/8A8Pv/APD7/wDw+/8A8Pv/APD7/wDw+/8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A8Pv/APD7/wDw+/8A8Pv/AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD4HwAA4AcAAMADAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAwAMAAOAHAAD4HwAA//8AAA==">
+    <meta name="description" content="Nicholas A. Thomas - Founder of Complexity Insights. Economics, Data Science, and Complexity Theory.">
+    <title>Nicholas A. Thomas</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%231A332A'%3E✳%3C/text%3E%3C/svg%3E">
+    
     <style>
-        @keyframes rainbow {
-            0% { color: #ff0000; }
-            16% { color: #ff8800; }
-            33% { color: #ffff00; }
-            50% { color: #00ff00; }
-            66% { color: #0088ff; }
-            83% { color: #8800ff; }
-            100% { color: #ff0000; }
-        }
-
-        @keyframes blink {
-            0%, 49% { opacity: 1; }
-            50%, 100% { opacity: 0; }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+        :root {
+            --bg-paper: #F9F8F4;
+            --text-ink: #2b2b2b;
+            --ivy-green: #1A332A;
+            --old-gold: #A68B5B;
+            --white: #ffffff;
+            --border-color: #dcd6ce;
         }
 
         * {
@@ -43,365 +29,676 @@
         }
 
         body {
-            background-color: #000080;
-            background-image: 
-                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.03) 35px, rgba(255,255,255,.03) 70px);
-            font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
-            color: #00ff00;
-            overflow-x: hidden;
+            font-family: 'Garamond', 'Georgia', serif;
+            background-color: var(--bg-paper);
+            color: var(--text-ink);
+            line-height: 1.8;
+            font-size: 18px;
         }
 
-        .construction {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(45deg, #ffff00 25%, #000000 25%, #000000 50%, #ffff00 50%, #ffff00 75%, #000000 75%, #000000);
-            background-size: 40px 40px;
-            border: 5px solid #ff0000;
-            margin: 20px auto;
-            max-width: 800px;
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
         }
 
-        .construction img {
-            width: 60px;
-            height: 60px;
-            animation: spin 2s linear infinite;
-        }
-
-        .construction h1 {
-            font-size: 2.5rem;
-            text-shadow: 3px 3px 0px #ff00ff, 6px 6px 0px #00ffff;
-            animation: rainbow 3s linear infinite;
-            margin: 10px 0;
-        }
-
+        /* HEADER - Small Caps Enhancement */
         .header {
-            background: linear-gradient(to bottom, #0000aa, #0000ff);
-            padding: 20px;
+            background-color: var(--bg-paper);
+            padding: 1.5rem 0;
             text-align: center;
-            border: 3px ridge #00ffff;
-            margin: 20px;
-            box-shadow: 0 0 20px #00ffff;
+            border-bottom: 3px double var(--border-color);
+            margin: 0 2rem;
         }
 
-        .header h2 {
+        .header h1 {
             font-size: 3rem;
-            animation: rainbow 2s linear infinite;
-            text-shadow: 2px 2px 0px #000000;
-            margin-bottom: 10px;
+            color: var(--ivy-green);
+            letter-spacing: 3px;
+            font-variant: small-caps;
+            font-weight: 600;
         }
 
-        .marquee-container {
-            background-color: #ffff00;
-            color: #ff0000;
-            padding: 10px;
-            border: 3px solid #000000;
-            margin: 20px;
-            overflow: hidden;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .marquee {
-            display: inline-block;
-            white-space: nowrap;
-            animation: marquee 15s linear infinite;
-        }
-
-        .visitor-counter {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 15px;
-            border: 3px solid #ff0000;
-            text-align: center;
-            margin: 20px auto;
-            max-width: 300px;
-            font-size: 1.2rem;
-            box-shadow: 5px 5px 0px #ff00ff;
-        }
-
-        .content {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #c0c0c0;
-            border: 5px outset #ffffff;
-            color: #000000;
-        }
-
-        .section {
-            background-color: #ffffff;
-            border: 3px inset #808080;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .section h3 {
-            color: #0000ff;
-            font-size: 2rem;
-            text-decoration: underline;
-            margin-bottom: 15px;
-        }
-
-        .gif-row {
+        /* HERO SECTION */
+        .hero {
+            background-color: var(--ivy-green);
+            color: var(--bg-paper);
+            padding: 5rem 2rem;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            margin: 20px 0;
+            gap: 5rem;
             flex-wrap: wrap;
-            gap: 15px;
+            margin-bottom: 3rem;
         }
 
-        .gif-box {
-            width: 88px;
-            height: 31px;
-            background: linear-gradient(45deg, #ff00ff, #00ffff);
-            border: 2px solid #000000;
+        .hero-image {
+            flex: 0 0 auto;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 420px;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 40px;
+            border: 6px solid var(--ivy-green);
+            outline: 2px solid rgba(255,255,255,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .hero-image .placeholder {
+            width: 420px;
+            height: 420px;
+            background-color: #e5e5e5;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            font-size: 0.8rem;
-            animation: float 2s ease-in-out infinite;
+            font-size: 4rem;
+            color: var(--ivy-green);
+            border-radius: 40px;
         }
 
-        .link-button {
-            background: linear-gradient(to bottom, #ffffff, #c0c0c0);
-            border: 3px outset #ffffff;
-            padding: 10px 20px;
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+        }
+
+        .hero-content h2 {
+            font-family: 'Garamond', 'Georgia', serif;
+            font-weight: 400;
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            line-height: 1.1;
+            font-style: normal;
+        }
+
+        /* Drop Cap */
+        .hero-content h2::first-letter {
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 0.8;
+            float: left;
+            margin-right: 8px;
+            margin-top: 8px;
+            color: var(--old-gold);
+        }
+
+        .hero-content p {
             font-size: 1.2rem;
-            font-family: 'Comic Sans MS', cursive;
-            cursor: pointer;
+            margin-bottom: 1.2rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .company-link {
+            color: var(--white);
             text-decoration: none;
-            color: #000000;
+            border-bottom: 1px solid var(--old-gold);
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .company-link:hover {
+            color: var(--old-gold);
+            border-bottom-color: transparent;
+        }
+
+        .cta-button {
             display: inline-block;
-            margin: 10px;
-            transition: all 0.2s;
-        }
-
-        .link-button:hover {
-            background: linear-gradient(to bottom, #ffff00, #ff8800);
-            transform: scale(1.1);
-        }
-
-        .link-button:active {
-            border-style: inset;
-        }
-
-        .webring {
-            text-align: center;
-            margin: 30px 0;
-            padding: 20px;
-            background-color: #800080;
-            border: 5px double #ffff00;
-        }
-
-        .webring h4 {
-            color: #ffff00;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .webring a {
-            color: #00ffff;
-            font-size: 1.2rem;
+            margin-top: 2rem;
+            padding: 0.8rem 2.5rem;
+            background-color: transparent;
+            color: var(--old-gold);
             text-decoration: none;
-            margin: 0 15px;
+            border: 1px solid var(--old-gold);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
         }
 
-        .webring a:hover {
-            text-decoration: underline;
-            color: #ff00ff;
+        .cta-button:hover {
+            background-color: var(--old-gold);
+            color: var(--ivy-green);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(166, 139, 91, 0.3);
         }
 
-        .guestbook {
-            background-color: #ffff99;
-            border: 5px groove #ff0000;
-            padding: 20px;
-            margin: 20px 0;
+        /* DIVIDER STYLES */
+        .asterisk {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--old-gold);
+            margin: 1.5rem 0 0.5rem;
+            font-family: serif;
+            font-variant-emoji: text;
         }
 
-        .guestbook h3 {
-            color: #ff0000;
+        .hairline {
+            max-width: 200px;
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 3rem auto;
+            opacity: 0.5;
+        }
+
+        /* PHILOSOPHY SECTION - NEW */
+        .philosophy {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
             text-align: center;
         }
 
-        .blink {
-            animation: blink 1s step-start infinite;
-            color: #ff0000;
-            font-weight: bold;
-            font-size: 1.2rem;
+        .philosophy p {
+            font-size: 1.3rem;
+            line-height: 1.9;
+            color: var(--text-ink);
+            font-style: italic;
+            position: relative;
         }
 
-        .footer {
-            background-color: #000000;
-            color: #00ff00;
-            padding: 30px;
+        .philosophy p::before {
+            content: """;
+            font-size: 4rem;
+            color: var(--old-gold);
+            opacity: 0.3;
+            position: absolute;
+            left: -2rem;
+            top: -1rem;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* SELECTED WORK SECTION - NEW */
+        .selected-work {
+            max-width: 1100px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .selected-work h2 {
             text-align: center;
-            margin: 20px;
-            border: 3px solid #00ff00;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--ivy-green);
         }
 
-        .footer a {
-            color: #00ffff;
-        }
-
-        .best-viewed {
+        .selected-work .subtitle {
             text-align: center;
-            color: #ffff00;
-            margin: 20px;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: #666;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .publications {
+            display: grid;
+            gap: 2.5rem;
+        }
+
+        .publication {
+            background-color: var(--white);
+            padding: 2.5rem;
+            border-left: 3px solid var(--old-gold);
+            transition: all 0.3s ease;
+        }
+
+        .publication:hover {
+            border-left-width: 6px;
+            padding-left: 2.75rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .publication h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--ivy-green);
+        }
+
+        .publication .meta {
             font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+            font-style: italic;
         }
 
-        img.icon {
-            vertical-align: middle;
-            margin: 0 5px;
+        .publication p {
+            font-size: 1.05rem;
+            color: #4a4a4a;
+            line-height: 1.7;
+            margin-bottom: 1rem;
         }
 
+        .publication a {
+            color: var(--ivy-green);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+
+        .publication a:hover {
+            color: var(--old-gold);
+        }
+
+        /* CONTENT CARDS */
+        .content-section {
+            max-width: 1100px;
+            margin: 0 auto 5rem;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--ivy-green);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: #666;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .card {
+            background-color: var(--white);
+            padding: 2.5rem;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .card:hover {
+            border-color: var(--old-gold);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            transform: translateY(-4px);
+        }
+
+        .card-icon {
+            color: var(--old-gold);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--ivy-green);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #4a4a4a;
+        }
+
+        .card a {
+            color: var(--ivy-green);
+            font-weight: 700;
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        /* NEWSLETTER SIGNUP - NEW */
+        .newsletter {
+            max-width: 600px;
+            margin: 5rem auto;
+            padding: 3rem 2rem;
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .newsletter h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--ivy-green);
+        }
+
+        .newsletter p {
+            font-size: 1.05rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.8rem 1.2rem;
+            border: 1px solid var(--border-color);
+            font-family: 'Garamond', 'Georgia', serif;
+            font-size: 1rem;
+            background-color: var(--bg-paper);
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: var(--old-gold);
+        }
+
+        .newsletter-form button {
+            padding: 0.8rem 1.8rem;
+            background-color: var(--ivy-green);
+            color: var(--white);
+            border: none;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background-color: var(--old-gold);
+            color: var(--ivy-green);
+        }
+
+        /* CONNECT SECTION */
+        .connect {
+            border-top: 3px double var(--border-color);
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .connect h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--ivy-green);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid var(--ivy-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            background: transparent;
+        }
+
+        .social-links a:hover {
+            background-color: var(--ivy-green);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(26, 51, 42, 0.2);
+        }
+
+        .social-links svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--ivy-green);
+            transition: fill 0.3s;
+        }
+
+        .social-links a:hover svg {
+            fill: var(--white);
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: var(--bg-paper);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            margin-top: 0;
+        }
+
+        .footer p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--text-ink);
+        }
+
+        .retro-link {
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+            display: inline-block;
+            color: var(--old-gold);
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 0.7rem;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        
+        .retro-link:hover { 
+            opacity: 1; 
+        }
+
+        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .header h2 {
-                font-size: 2rem;
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+                padding: 3rem 1.5rem;
+            }
+
+            .hero-image img, .hero-image .placeholder {
+                width: 280px;
+                height: 280px;
+            }
+
+            .header h1 { 
+                font-size: 2.5rem; 
+                letter-spacing: 2px;
             }
             
-            .construction h1 {
-                font-size: 1.5rem;
+            .hero-content h2 { 
+                font-size: 2.2rem; 
             }
-            
-            .gif-row {
-                justify-content: center;
+
+            .hero-content h2::first-letter {
+                font-size: 3.5rem;
+            }
+
+            .philosophy p::before {
+                left: -1rem;
+                font-size: 3rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-form button {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <div class="construction">
-        <h1>🚧 UNDER CONSTRUCTION 🚧</h1>
-        <p style="font-size: 1.5rem; color: #000000; font-weight: bold; margin: 10px 0;">
-            ⚠️ CAUTION ⚠️
-        </p>
-    </div>
+    <header class="header">
+        <h1>Nicholas A. Thomas</h1>
+    </header>
 
-    <div class="header">
-        <h2>✨ WELCOME TO NICHOLAS'S CYBER SPACE ✨</h2>
-        <p style="font-size: 1.5rem; color: #ffff00;">🌐 THE COOLEST PAGE ON THE WORLD WIDE WEB 🌐</p>
-    </div>
-
-    <div class="marquee-container">
-        <div class="marquee">
-            ⭐ WELCOME TO MY HOMEPAGE! ⭐ THANKS FOR VISITING! ⭐ SIGN MY GUESTBOOK! ⭐ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0! ⭐ 
+    <section class="hero">
+        <div class="hero-image">
+            <img src="Images/Headshot.jpeg" alt="Nicholas A. Thomas" id="profileImg" style="display: none;">
+            <div class="placeholder" id="placeholder">✳︎</div>
         </div>
-    </div>
-
-    <div class="visitor-counter">
-        🔢 YOU ARE VISITOR NUMBER: <br>
-        <span style="font-size: 2rem; color: #ff0000;">00</span>
-        <span style="font-size: 2rem; color: #ff0000;">04</span>
-        <span style="font-size: 2rem; color: #ff0000;">20</span>
-        <span style="font-size: 2rem; color: #ff0000;">00</span>
-    </div>
-
-    <div class="content">
-        <div class="section">
-            <h3>📌 ABOUT ME 📌</h3>
-            <p style="font-size: 1.1rem; line-height: 1.8;">
-                <span class="blink">★NEW★</span> Hey there, dial up surfer! 😎 Welcome to my personal corner of cyberspace! 
-                I'm Nicholas, and I'm totally into <b>ECONOMICS</b>, <b>CHAOS THEORY</b>, and <b>COMPLEXITY SCIENCE</b>! 
-                🧮📊📈
+        <div class="hero-content">
+            <h2>A passion for problem solving.</h2>
+            <p><strong>Founder of <a href="https://complexityinsights.com" target="_blank" class="company-link">Complexity Insights</a>.</strong></p>
+            <p>Combining rigorous economic theory with complexity science to analyze market patterns and forecast trends.</p>
+            <p style="font-style: italic; color: rgba(255,255,255,0.7); margin-top: 1rem;">
+                "For millennia people have been trying to predict the future. Now, leveraging big data and machine learning, we can identify the patterns that drive change."
             </p>
-            <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 10px;">
-                When I'm not crunching numbers and predicting the unpredictable, you can find me vibing to some sick beats 🎵, 
-                reading about the latest tech 💾, or just hanging out online! This page is dedicated to all things ME!
-            </p>
-            <p style="font-size: 1.1rem; margin-top: 15px;">
-                <b>STATUS:</b> <span style="color: #00ff00;">● ONLINE</span> | 
-                <b>MOOD:</b> 😄 Totally rad! | 
-                <b>LISTENING TO:</b> 🎧 Whatever's on MTV
-            </p>
+            <a href="https://substack.com/@econnickt" target="_blank" class="cta-button">Read My Research</a>
         </div>
+    </section>
 
-        <div class="gif-row">
-            <div class="gif-box">COOL SITE</div>
-            <div class="gif-box" style="animation-delay: 0.5s;">HOT!</div>
-            <div class="gif-box" style="animation-delay: 1s;">NEW!</div>
-            <div class="gif-box" style="animation-delay: 1.5s;">AWARD</div>
+    <div class="asterisk">✳︎</div>
+
+    <!-- NEW: Philosophy Section -->
+    <section class="philosophy">
+        <p>Markets are complex adaptive systems—neither fully random nor entirely predictable. By studying emergence, feedback loops, and non-linear dynamics, we can identify the underlying patterns that traditional models miss.</p>
+    </section>
+
+    <div class="hairline"></div>
+
+    <!-- NEW: Selected Work -->
+    <section class="selected-work">
+        <h2>Selected Work</h2>
+        <p class="subtitle">Recent explorations in complexity economics and market dynamics.</p>
+
+        <div class="publications">
+            <article class="publication">
+                <h3>Chaos Theory and Market Prediction</h3>
+                <p class="meta">Complexity Insights • November 2024</p>
+                <p>An examination of how deterministic chaos manifests in financial markets, and why traditional forecasting models fail to capture emergent behaviors in complex economic systems.</p>
+                <a href="https://substack.com/@econnickt" target="_blank">Read Article →</a>
+            </article>
+
+            <article class="publication">
+                <h3>The Fractal Nature of Economic Cycles</h3>
+                <p class="meta">Complexity Insights • October 2024</p>
+                <p>Exploring self-similar patterns across different time scales in market data, and how fractal geometry provides insights into boom-bust cycles that traditional economic models overlook.</p>
+                <a href="https://substack.com/@econnickt" target="_blank">Read Article →</a>
+            </article>
+
+            <article class="publication">
+                <h3>Machine Learning in Economic Forecasting</h3>
+                <p class="meta">Complexity Insights • September 2024</p>
+                <p>A deep dive into how neural networks and ensemble methods can identify non-linear relationships in economic data, improving predictive accuracy where classical econometrics falls short.</p>
+                <a href="https://substack.com/@econnickt" target="_blank">Read Article →</a>
+            </article>
         </div>
+    </section>
 
-        <div class="section">
-            <h3>🔥 MY INTERESTS 🔥</h3>
-            <ul style="font-size: 1.1rem; line-height: 2; margin-left: 30px;">
-                <li>💰 <b>Economics</b> - Making sense of the markets, baby!</li>
-                <li>🌀 <b>Chaos Theory</b> - Finding order in the chaos (so deep!)</li>
-                <li>📊 <b>Data Science</b> - Numbers are my jam!</li>
-                <li>💻 <b>Surfing the Information Superhighway</b></li>
-                <li>🎮 <b>Video Games</b> (when I have time lol)</li>
-                <li>📚 <b>Reading</b> - Knowledge is power!</li>
-                <li>🎵 <b>Music</b> - All genres, all day!</li>
-            </ul>
-        </div>
+    <div class="asterisk">✳︎</div>
 
-        <div class="guestbook">
-            <h3>📝 ★★★ SIGN MY GUESTBOOK! ★★★ 📝</h3>
-            <p style="text-align: center; font-size: 1.1rem; margin: 15px 0;">
-                Please leave a message so I know you were here! <br>
-                <span class="blink">ALL MY FRIENDS ARE DOING IT!</span>
-            </p>
-            <div style="text-align: center; margin-top: 15px;">
-                <a href="mailto:test@test.com?subject=Guestbook%20Entry" class="link-button">
-                    📧 SIGN GUESTBOOK 📧
-                </a>
+    <section class="content-section">
+        <h2 class="section-title">Professional Profile</h2>
+        <p class="section-subtitle">Specializing in economics, complexity science, and data-driven analysis.</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">I</div>
+                <h3>Education</h3>
+                <p><strong>Economics B.S.</strong><br>
+                Focus: Business & Law Economics<br>
+                Minor in Business Administration</p>
+                <br>
+                <p style="font-size: 0.9rem; font-style: italic;">Combining rigorous theory with practical application.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">II</div>
+                <h3>Experience</h3>
+                <p>Research internships with the <strong>CATO Institute</strong> and the <strong>Greater Washington Institute</strong>.</p>
+                <br>
+                <p style="font-size: 0.9rem;">Policy analysis, market research, and insights into complex economic systems.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">III</div>
+                <h3>Scholarship</h3>
+                <p>Publishing regular research on chaos theory and market dynamics.</p>
+                <br>
+                <a href="https://complexityinsights.com/projects/" target="_blank">View Research →</a>
             </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h3>🌐 CHECK OUT MY LINKS! 🌐</h3>
-            <div style="text-align: center;">
-                <a href="https://nicholas-thomas.com" class="link-button">🏠 MY PROFESSIONAL SITE</a>
-                <a href="https://complexityinsights.com" class="link-button">💼 COMPLEXITY INSIGHTS</a>
-                <a href="https://substack.com/@econnickt" class="link-button">📰 MY SUBSTACK</a>
-                <a href="https://twitter.com/EconNickT" class="link-button">🐦 TWITTER</a>
-                <a href="https://www.linkedin.com/in/thomasnicholasa/" class="link-button">💼 LINKEDIN</a>
-                <a href="https://github.com/EconNickT" class="link-button">💻 GITHUB</a>
-            </div>
+    <div class="hairline"></div>
+
+    <!-- NEW: Newsletter Signup -->
+    <section class="newsletter">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to receive insights on complexity economics, market analysis, and forecasting research.</p>
+        <form class="newsletter-form" action="https://substack.com/@econnickt" target="_blank">
+            <input type="email" placeholder="your.email@example.com" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="connect">
+        <h2>Correspondence</h2>
+        <div class="social-links">
+            <a href="https://twitter.com/EconNickT" target="_blank" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/thomasnicholasa/" target="_blank" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:contact@nicholas-thomas.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="https://github.com/EconNickT" target="_blank" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://substack.com/@econnickt" target="_blank" aria-label="Substack">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+            </a>
         </div>
+    </section>
 
-        <div class="webring">
-            <h4>🔗 THIS SITE IS PART OF THE ECONOMICS WEBRING! 🔗</h4>
-            <p style="color: #ffffff; margin: 10px 0;">
-                <a href="#">⬅️ PREVIOUS</a> | 
-                <a href="#">🏠 HOME</a> | 
-                <a href="#">NEXT ➡️</a>
-            </p>
-        </div>
-    </div>
+    <footer class="footer">
+        <p>Nicholas A. Thomas</p>
+        <p style="font-size: 0.9rem; color: #666; font-style: italic;">© 2025. All rights reserved.</p>
+    </footer>
 
-    <div class="best-viewed">
-        <p>
-            ⚡ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0+ AT 800x600 RESOLUTION ⚡
-        </p>
-        <p style="margin-top: 10px;">
-            📧 Got <b>E-MAIL</b>? 📧 | 🔊 <b>SOUND ENABLED!</b> 🔊
-        </p>
-    </div>
-
-    <div class="footer">
-        <p style="font-size: 1.3rem; margin-bottom: 10px;">
-            ⚡ POWERED BY: <span style="color: #ff00ff;">HTML</span> & <span style="color: #00ffff;">PURE INTERNET VIBES</span> ⚡
-        </p>
-        <p style="font-size: 1rem; margin: 10px 0;">
-            This page was hand-coded with ❤️ in the spirit of the early web
-        </p>
-        <p style="margin-top: 15px;">
-            <a href="mailto:test@test.com">📧 E-MAIL ME!</a>
-        </p>
-        <p style="font-size: 0.9rem; margin-top: 15px; color: #c0c0c0;">
-            © 2025 Nicholas A. Thomas | Last Updated: RIGHT NOW!
-        </p>
-        <p style="font-size: 1.2rem; margin-top: 10px;">
-            <span class="blink">★ YOU ARE AWESOME! ★</span>
-        </p>
-    </div>
-
-    <div style="text-align: center; margin: 20px;">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="spacer" style="height: 20px; width: 1px;">
-    </div>
+    <script>
+        const profileImage = document.getElementById('profileImg');
+        const placeholder = document.getElementById('placeholder');
+        
+        profileImage.onload = function() {
+            this.style.display = 'block';
+            placeholder.style.display = 'none';
+        };
+        
+        profileImage.onerror = function() {
+            this.style.display = 'none';
+            placeholder.style.display = 'flex';
+        };
+        
+        if(profileImage.complete) {
+            profileImage.onload();
+        }
+        
+        profileImage.src = 'Images/Headshot.jpeg';
+    </script>
 </body>
 </html>
