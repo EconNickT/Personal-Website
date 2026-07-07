@@ -172,10 +172,16 @@
             border-bottom-color: transparent;
         }
 
-        /* Button tailored for Green Background */
+        /* Buttons tailored for Green Background */
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
         .cta-button {
             display: inline-block;
-            margin-top: 2rem;
             padding: 0.8rem 2.5rem;
             background-color: transparent;
             color: var(--old-gold); /* Gold text */
@@ -192,6 +198,17 @@
             background-color: var(--old-gold);
             color: var(--ivy-green);
             transform: translateY(-1px);
+        }
+
+        /* Primary variant: solid gold */
+        .cta-button.primary {
+            background-color: var(--old-gold);
+            color: var(--ivy-green);
+        }
+
+        .cta-button.primary:hover {
+            background-color: transparent;
+            color: var(--old-gold);
         }
 
         /* --- ORNAMENT --- */
@@ -357,6 +374,10 @@
                 height: 280px;
             }
 
+            .hero-actions {
+                justify-content: center;
+            }
+
             .header h1 { font-size: 2.5rem; }
             .hero-content h2 { font-size: 2.2rem; }
         }
@@ -379,7 +400,10 @@
             <p style="font-style: italic; color: rgba(255,255,255,0.7); margin-top: 1rem;">
                 "For millennia people have been trying to predict the future. Now, leveraging big data and machine learning, we can identify the patterns that drive change."
             </p>
-            <a href="https://substack.com/@econnickt" target="_blank" class="cta-button">Read My Research</a>
+            <div class="hero-actions">
+                <a href="https://www.linkedin.com/in/thomasnicholasa/" target="_blank" class="cta-button primary">Connect on LinkedIn</a>
+                <a href="https://substack.com/@econnickt" target="_blank" class="cta-button">Read My Research</a>
+            </div>
         </div>
     </section>
 
