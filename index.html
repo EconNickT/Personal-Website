@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nicholas A. Thomas - Founder of Complexity Insights. Economics, Data Science, and Complexity Theory.">
-    <title>Nicholas A. Thomas</title>
-    
+    <meta name="description" content="Nicholas A. Thomas — Economist in the Washington, DC metro area. Founder of Complexity Insights. Traditional economic analysis paired with complexity science and data-driven research.">
+    <title>Nicholas A. Thomas — Economist</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicholas-thomas.com/">
+    <meta property="og:title" content="Nicholas A. Thomas — Economist">
+    <meta property="og:description" content="Economist in the Washington, DC metro area. Founder of Complexity Insights. Traditional economic analysis paired with complexity science and data-driven research.">
+    <meta property="og:image" content="https://nicholas-thomas.com/Images/Headshot.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@EconNickT">
+    <meta name="twitter:title" content="Nicholas A. Thomas — Economist">
+    <meta name="twitter:description" content="Economist in the Washington, DC metro area. Founder of Complexity Insights.">
+    <meta name="twitter:image" content="https://nicholas-thomas.com/Images/Headshot.webp">
+    <link rel="canonical" href="https://nicholas-thomas.com/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nicholas A. Thomas",
+      "jobTitle": "Economist",
+      "url": "https://nicholas-thomas.com/",
+      "image": "https://nicholas-thomas.com/Images/Headshot.webp",
+      "email": "mailto:contact@nicholas-thomas.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Washington, DC Metro Area",
+        "addressCountry": "US"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "The Pennsylvania State University"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Complexity Insights",
+        "url": "https://complexityinsights.com"
+      },
+      "knowsAbout": ["Economics", "Complexity Economics", "Agent-Based Modeling", "Monte Carlo Simulation", "Data Analysis"],
+      "sameAs": [
+        "https://www.linkedin.com/in/thomasnicholasa/",
+        "https://github.com/EconNickT",
+        "https://twitter.com/EconNickT",
+        "https://substack.com/@econnickt"
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -90,18 +135,6 @@
             
             box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
             display: block; 
-        }
-
-        .hero-image .placeholder {
-            width: 420px;
-            height: 420px;
-            background-color: #e5e5e5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: var(--ivy-green);
-            border-radius: 40px;
         }
 
         .hero-content {
@@ -196,8 +229,12 @@
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media (max-width: 700px) {
+            .cards { grid-template-columns: 1fr; }
         }
 
         .card {
@@ -306,23 +343,6 @@
             color: var(--text-ink);
         }
 
-        .retro-link {
-            font-size: 0.9rem;
-            margin-top: 1.5rem;
-            display: inline-block;
-            color: var(--old-gold);
-            text-decoration: none;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-family: sans-serif;
-            font-weight: bold;
-            font-size: 0.7rem;
-            opacity: 0.7;
-            transition: opacity 0.3s;
-        }
-        
-        .retro-link:hover { opacity: 1; }
-
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .hero {
@@ -332,7 +352,7 @@
                 padding: 3rem 1.5rem;
             }
 
-            .hero-image img, .hero-image .placeholder {
+            .hero-image img {
                 width: 280px; /* Adjusted for mobile */
                 height: 280px;
             }
@@ -347,15 +367,15 @@
         <h1>Nicholas A. Thomas</h1>
     </header>
 
+    <main>
     <section class="hero">
         <div class="hero-image">
-            <img src="Images/Headshot.jpeg" alt="Nicholas A. Thomas" id="profileImg" style="display: none;">
-            <div class="placeholder" id="placeholder">✳</div>
+            <img src="Images/Headshot.webp" alt="Nicholas A. Thomas" width="1260" height="840">
         </div>
         <div class="hero-content">
-            <h2>A passion for problem solving.</h2>
-            <p><strong>Founder of <a href="https://complexityinsights.com" target="_blank" class="company-link">Complexity Insights</a>.</strong></p>
-            <p>Combining rigorous economic theory with complexity science to analyze market patterns and forecast trends.</p>
+            <h2>Rigorous economics for a complex world.</h2>
+            <p><strong>Economist in the Washington, DC metro area. Founder of <a href="https://complexityinsights.com" target="_blank" class="company-link">Complexity Insights</a>.</strong></p>
+            <p>Pairing traditional economic analysis with tools from complexity science to understand market patterns and forecast trends.</p>
             <p style="font-style: italic; color: rgba(255,255,255,0.7); margin-top: 1rem;">
                 "For millennia people have been trying to predict the future. Now, leveraging big data and machine learning, we can identify the patterns that drive change."
             </p>
@@ -373,7 +393,8 @@
             <div class="card">
                 <div class="card-icon">I</div>
                 <h3>Education</h3>
-                <p><strong>Economics B.S.</strong><br>
+                <p><strong>B.S. in Economics</strong><br>
+                Penn State University, 2025<br>
                 Focus: Business & Law Economics<br>
                 Minor in Business Administration</p>
                 <br>
@@ -383,15 +404,23 @@
             <div class="card">
                 <div class="card-icon">II</div>
                 <h3>Experience</h3>
-                <p>Building a cutting edge Economic consulting firm <strong>Complexity Insights</strong>.</p>
+                <p>Founder of <strong>Complexity Insights</strong>, an independent economics research practice.</p>
                 <br>
-                <p style="font-size: 0.9rem;">Developing insights into complex economic systems. Building Agent based models to better predict the world.</p>
+                <p style="font-size: 0.9rem;">Publishing applied research and building agent-based models that complement traditional economic analysis — a second lens on the questions economists have always asked.</p>
             </div>
 
             <div class="card">
                 <div class="card-icon">III</div>
+                <h3>Toolkit</h3>
+                <p>Python for data analysis and simulation — agent-based models, Monte Carlo methods, and data pipelines.</p>
+                <br>
+                <p style="font-size: 0.9rem;">From economic theory to working, reproducible code — open on <a href="https://github.com/EconNickT" target="_blank">GitHub</a>.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">IV</div>
                 <h3>Scholarship</h3>
-                <p>Publishing regular research on traditional and quantitative economics</p>
+                <p>Publishing regular research on traditional and quantitative economics.</p>
                 <br>
                 <a href="https://complexityinsights.com/projects/" target="_blank">View Research →</a>
             </div>
@@ -418,32 +447,12 @@
             </a>
         </div>
     </section>
+    </main>
 
     <footer class="footer">
         <p>Nicholas A. Thomas</p>
         <p style="font-size: 0.9rem; color: #666; font-style: italic;">© 2026. All rights reserved.</p>
     </footer>
 
-    <script>
-        const profileImage = document.getElementById('profileImg');
-        const placeholder = document.getElementById('placeholder');
-        
-        profileImage.onload = function() {
-            this.style.display = 'block';
-            placeholder.style.display = 'none';
-        };
-        
-        profileImage.onerror = function() {
-            this.style.display = 'none';
-            placeholder.style.display = 'flex';
-        };
-        
-        // Ensure image loads if cached
-        if(profileImage.complete) {
-            profileImage.onload();
-        }
-        
-        profileImage.src = 'Images/Headshot.jpeg';
-    </script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+# Nicholas A. Thomas
+
+> Personal site of Nicholas A. Thomas, an economist in the Washington, DC metro area and founder of Complexity Insights, an independent economics research practice. He pairs traditional economic analysis with tools from complexity science — agent-based models, Monte Carlo simulation, and data pipelines built in Python.
+
+Nicholas holds a B.S. in Economics from Penn State University (2025), with a focus in Business & Law Economics and a minor in Business Administration. He publishes regular research on traditional and quantitative economics.
+
+## Links
+
+- [Complexity Insights](https://complexityinsights.com): His economics research practice
+- [Research & Projects](https://complexityinsights.com/projects/): Published research
+- [Substack](https://substack.com/@econnickt): Regular economics writing
+- [GitHub](https://github.com/EconNickT): Open, reproducible code — simulations and models
+- [LinkedIn](https://www.linkedin.com/in/thomasnicholasa/): Professional profile and resume
+
+## Contact
+
+- Email: contact@nicholas-thomas.com
